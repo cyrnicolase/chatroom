@@ -27,6 +27,9 @@ abstract class Server {
         $this->serv->start();
     }
 
+    /**
+     * Map userid and fd once user login
+     */
     public function login($fd) {
         $user_id = $fd;
         $this->room->addUser($user_id);
